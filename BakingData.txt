@@ -1,3 +1,1 @@
-E:/Git Project/BatchMeshBaker/SM_Item_Build_Yiji_Wall_4m5m/MI_Item_Build_Yiji_Wall
-E:/Git Project/BatchMeshBaker/SM_Item_Build_Yiji_Wall_4m5m/MI_Item_Build_Stone_BreakableWall
-E:/Git Project/BatchMeshBaker/SM_Item_Build_Yiji_Wall_4m5m/MI_Item_Build_Stone_BreakableFloor
+E:/Git Project/BatchMeshBaker/SM_Item_Build_Yiji_Wall_4m5m
