@@ -8,4 +8,8 @@ https://mirror.freedif.org/blender/release/Blender4.3/blender-4.3.1-windows-x64.
 Editing Scripts Requires Opening Blender In Factory Mode  
 "blender --factory-startup"  
   
-Remember to confirm the path in BakingData.txt before running
+Remember to confirm the path in BakingData.txt before running  
+  
+Python Need numpy And pillow  
+"pip install pillow"  
+"pip install numpy"  
