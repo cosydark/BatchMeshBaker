@@ -1,2 +1,0 @@
-XRender/Environment/EV_DefaultLit
-0
