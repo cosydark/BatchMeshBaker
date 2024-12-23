@@ -13,7 +13,7 @@ for line in lines:
     subfolders = []
 
     for folder_name in os.listdir(folder_path):
-        if folder_name.startswith("Material_") and os.path.isdir(os.path.join(folder_path, folder_name)):
+        if folder_name.startswith("Material") and os.path.isdir(os.path.join(folder_path, folder_name)):
             material_folder_path = os.path.join(folder_path, folder_name)
             material_paths.append(material_folder_path)
 

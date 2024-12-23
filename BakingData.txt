@@ -1,1 +1,1 @@
-E:/Git Project/BatchMeshBaker/SM_Item_Build_Yiji_Wall_4m5m
+D:\MeshBakerTemp\Prefab_Item_Build_Yiji_Floorcorner_4m_A\ReassembleableMesh
