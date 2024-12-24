@@ -25,7 +25,7 @@ for material_path in material_paths:
 
     for folder_name in os.listdir(material_path):
         if os.path.isdir(os.path.join(material_path, folder_name)):
-            co_paths.append(os.path.join(material_path, folder_name, 'C.tga'))
+            co_paths.append(os.path.join(material_path, folder_name, 'CO.tga'))
             mnrn_paths.append(os.path.join(material_path, folder_name, 'MNRN.tga'))
 
     # 合并 C.tga 图像
