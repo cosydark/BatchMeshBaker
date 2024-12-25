@@ -1,5 +1,5 @@
 from PIL import Image
-file_path = 'E:/Git Project/BatchMeshBaker/BakingData_DefaultLit.txt'
+file_path = 'D:/BakingData_DefaultLit.txt'
 
 # Read
 with open(file_path, 'r', encoding='utf-8') as file:

@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import numpy as np
 
-file_path = 'E:/Git Project/BatchMeshBaker/BakingData.txt'
+file_path = 'D:/BakingData_DefaultLit.txt'
 material_paths = []
 
 with open(file_path, 'r', encoding='utf-8') as file:

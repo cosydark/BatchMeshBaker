@@ -1,6 +1,7 @@
 import os
 
-file_path = 'E:/Git Project/BatchMeshBaker/BakingData.txt'
+current_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(current_dir, 'BakingData.txt')
 default_lit_shader_name = 'XRender/Environment/EV_DefaultLit'
 default_lit_paths = []
 
@@ -34,7 +35,7 @@ for line in lines:
                     default_lit_paths.append(subfolder)
 
 # 将 valid_paths 写入 Defaultlit_paths.txt 文件
-output_file_path = file_path.replace('BakingData.txt', 'BakingData_DefaultLit.txt')
+output_file_path = 'D:/BakingData_DefaultLit.txt'
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     for path in default_lit_paths:
         output_file.write(path + '\n')
