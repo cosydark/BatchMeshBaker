@@ -2,7 +2,8 @@ import os
 from PIL import Image
 import numpy as np
 
-file_path = 'D:/BakingData_DefaultLit.txt'
+current_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(current_dir, 'BakingData.txt')
 material_paths = []
 
 with open(file_path, 'r', encoding='utf-8') as file:
