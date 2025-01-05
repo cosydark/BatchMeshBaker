@@ -3,7 +3,7 @@ import argparse
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(current_dir, 'BakingData.txt')
-default_lit_shader_name = 'XRender/Environment/EV_DefaultLit'
+default_lit_shader_name = 'XRender/Environment/Trunk'
 default_lit_paths = []
 
 # 读取文件
@@ -39,7 +39,7 @@ for line in lines:
         print(f"文件或文件夹未找到: {e}")
 
 # 将 valid_paths 写入 Defaultlit_paths.txt 文件
-output_file_path = 'D:/BakingData_DefaultLit.txt'
+output_file_path = 'D:/BakingData_Trunk.txt'
 with open(output_file_path, 'w', encoding='utf-8') as output_file:
     for path in default_lit_paths:
         output_file.write(path + '\n')
