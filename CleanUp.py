@@ -10,7 +10,7 @@ with open(file_path, 'r', encoding='utf-8') as file:
 
 for line in lines:
     def delete_specific_files(root_dir):
-        target_files = ['CO.tga', 'MNRN.tga', 'C.tga', 'MOH.tga', 'N.tga', 'R.tga']
+        target_files = ['CO.tga', 'MNRN.tga', 'C.tga', 'MOH.tga', 'N.tga', 'R.tga', 'CA.tga']
         for subdir, _, files in os.walk(root_dir):
             for file in files:
                 if file in target_files:

@@ -22,12 +22,14 @@ material_paths = [material.replace('\\', '/') for material in material_paths]
 
 for material_path in material_paths:
     co_paths = []
+    ca_paths = []
     mnrn_paths = []
 
     for folder_name in os.listdir(material_path):
         if os.path.isdir(os.path.join(material_path, folder_name)):
             co_paths.append(os.path.join(material_path, folder_name, 'CO.tga'))
             mnrn_paths.append(os.path.join(material_path, folder_name, 'MNRN.tga'))
+            ca_paths.append(os.path.join(material_path, folder_name, 'CA.tga'))
 
     # 合并 C.tga 图像
     co_images = [np.array(Image.open(path)) for path in co_paths if os.path.exists(path)]
@@ -46,3 +48,12 @@ for material_path in material_paths:
         output_mnrn_image_path = os.path.join(material_path, 'MNRN.tga')
         max_mnrn_image.save(output_mnrn_image_path)
         print(f"合并后的 MNRN.tga 保存到: {output_mnrn_image_path}")
+
+    # 合并 CA.tga 图像
+    ca_images = [np.array(Image.open(path)) for path in ca_paths if os.path.exists(path)]
+    if ca_images:
+        max_ca_image_array = np.maximum.reduce(ca_images)
+        max_ca_image = Image.fromarray(max_ca_image_array)
+        output_ca_image_path = os.path.join(material_path, 'CA.tga')
+        max_ca_image.save(output_ca_image_path)
+        print(f"合并后的 MNRN.tga 保存到: {output_ca_image_path}")
