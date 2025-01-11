@@ -1,7 +1,14 @@
 from PIL import Image
 import os
 
-file_paths = ['D:/BakingData_DefaultLit.txt', 'D:/BakingData_Foliage.txt', 'D:/BakingData_Trunk.txt', 'D:/BakingData_Fern.txt', 'D:/BakingData_LayeredRock.txt']
+file_paths = ['D:/BakingData_DefaultLit.txt',
+              'D:/BakingData_Foliage.txt',
+              'D:/BakingData_Trunk.txt',
+              'D:/BakingData_Fern.txt',
+              'D:/BakingData_LayeredRock.txt',
+              'D:/BakingData_ThinWall.txt',
+              'D:/BakingData_Bubble.txt',
+              ]
 
 def process_file(file_path):
     # Read
