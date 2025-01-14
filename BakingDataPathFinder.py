@@ -56,6 +56,7 @@ ShaderNames = [
     'XRender/Environment/Bubble',
     'XRender/Environment/ICE_Parallax',
     'XRender/Environment/Vine',
+    'XRender/Environment/EV_LayeredArchitecture',
 ]
 OutputPaths = [
     'D:/BakingData_ThinWall.txt',
@@ -68,6 +69,7 @@ OutputPaths = [
     'D:/BakingData_Bubble.txt',
     'D:/BakingData_ICE.txt',
     'D:/BakingData_Vine.txt',
+    'D:/BakingData_LayeredArchitecture.txt',
 ]
 
 # Call the function
