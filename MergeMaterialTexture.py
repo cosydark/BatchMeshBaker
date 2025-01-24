@@ -11,6 +11,7 @@ file_paths = ['D:/BakingData_DefaultLit.txt',
               'D:/BakingData_ICE.txt',
               'D:/BakingData_Vine.txt',
               'D:/BakingData_LayeredArchitecture.txt',
+              'D:/BakingData_LayeredRock_HLOD.txt',
               ]
 
 def process_file(file_path):
